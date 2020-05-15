@@ -289,7 +289,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
-                    android:layout_toLeftOf="@id/switchBackground"
+                    android:layout_toLeftOf="@id/switchMute"
                     android:layout_toRightOf="@id/resizeTextView"
                     android:gravity="center|left"
                     android:minHeight="35dp"
@@ -317,8 +317,9 @@
                     android:src="@drawable/ic_cast_white_24dp"
                     android:background="?attr/selectableItemBackground"
                     android:contentDescription="@string/play_with_kodi_title"
+                    android:visibility="gone"
                     tools:ignore="RtlHardcoded"
-                    android:visibility="visible"/>
+                    tools:visibility="visible"/>
 
                 <ImageButton
                     android:id="@+id/share"
@@ -403,8 +404,7 @@
                     app:srcCompat="@drawable/ic_volume_off_white_72dp"
                     android:background="?attr/selectableItemBackground"
                     android:contentDescription="@string/switch_to_background"
-                    tools:ignore="RtlHardcoded"
-                    android:tint="@color/gray"/>
+                    tools:ignore="RtlHardcoded" />
 
             </RelativeLayout>
 
